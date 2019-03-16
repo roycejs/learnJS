@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Подключение шрифтов</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		window.onload = focus;
+
+		function focus () {
+			element = document.getElementById('greenplanet')
+			element.innerHTML = 'Zoom Zoom';
+			
+			classPlanet = document.getElementsByClassName('planet')
+			for (var i = 0; i < classPlanet.length; i++) {
+				classPlanet[i].style = 'color: green;';
+			}
+			element.style = 'color: red;'
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<h1>Green Planet</h1>
+		<p class="planet" id="greenplanet">All is well</p>
+	<h1>Red Planet</h1>
+		<p class="planet" id="redplanet">Nothing to report</p>
+	<h1>Blue Planet</h1>
+		<p class="planet" id="blueplanet">All systems A-OK</p>
+</body>
+</html>
